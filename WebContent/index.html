@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html ng-app="modalBoxApp">
+<head>
+<meta charset="ISO-8859-1">
+<title>Angularjs Modal Box</title>
+<link
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+	rel="stylesheet">
+	<link
+	href="css/main.css"
+	rel="stylesheet">
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<script	src="js/vendor/angular/angular.js"></script>
+	<script	src="js/vendor/ui-bootstrap-tpls.js"></script>
+	<script	src="js/vendor/dialogs.min.js"></script>
+	<script	src="js/app.js"></script>
+	<script	src="js/controller/modalBoxController.js"></script>
+</head>
+<body ng-controller="modalBoxController">
+	<div class="container">
+		<div class="row">
+			<center><h1>{{name}}</h1></center>
+		</div>
+		<div class="row">
+			<a href data-ng-click="openSimpleModalBox('md')" class="btn btn-default">Simple
+				Modal Box</a>
+		</div>
+		
+		<div class="row mt20">
+			<a href data-ng-click="openSimpleModalBox('lg')" class="btn btn-default">Large</a>
+			<a href data-ng-click="openSimpleModalBox('md')" class="btn btn-default">Medium</a>
+			<a href data-ng-click="openSimpleModalBox('sm')" class="btn btn-default">Small</a>
+		</div>
+	</div>
+</body>
+</html>
